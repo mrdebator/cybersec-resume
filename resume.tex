@@ -1,0 +1,220 @@
+\documentclass[letterpaper, 11pt]{article}
+
+% Packages used
+
+\usepackage{fontawesome} % used for icons
+\usepackage[T1]{fontenc} % font encodings
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{lipsum}
+\usepackage{microtype}
+\usepackage{vwcol}
+\usepackage{ragged2e}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ------------CUSTOM COMMANDS ------------------
+
+\newcommand{\educationItem}[4]{
+    \vspace{-1pt}
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small #3} & \textit{\small #4}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\expItem}[4]{
+    \vspace{5pt}
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small #3} & \textit{\small #4}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \textbf{#1}{ #2 \vspace{-5pt}}
+    }
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{2pt}}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
+
+
+
+
+% ---------- Document Beginning -----------------
+\justifying
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{center}
+\\~\\
+    % Name goes here
+    \vspace{-10pt}
+    {\huge \textbf{John} Doe}\vspace{5pt}
+    
+    % Links 
+    \href{mailto:email@example.com}{\faEnvelope \, {email@example.com}} |
+    \href{https://portfolio.me/}{\faLink \, portfolio.me} |
+    \href{https://www.github.com/}{\faGithub \, github.com/} |
+    \href{https://www.linkedin.com/}{\faLinkedin \, LinkedIn}
+    
+    
+\end{center}
+
+%-----------EDUCATION-----------------
+\vspace{-15pt}
+\section{Education}
+
+\educationItem
+    {Drexel University}{September 2019 - June 2023}{B.S. in Cybersecurity}{Cumulative GPA: 4.0/4.0}
+    
+\resumeItem
+    {Selected Coursework:}{Computer Forensics, Network Administration, Ethical Hacking, Systems Programming, Advanced Programming Techniques, Database Management Systems, Web Systems \& Services, Server Management, Discrete Mathematics}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+\vspace{-4pt}
+    \expItem
+        {Google}{Mountain View, CA}{Security Engineering Intern}{June 20XX - September 20XX}
+        \resumeItemListStart
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+            \vspace{-12pt}
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+            \vspace{-12pt}
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+        \resumeItemListEnd
+    \expItem
+        {Susquehanna International Group}{Bala Cynwyd, PA}{Cybersecurity Intern}{September 20XX - March 20XX}
+        \resumeItemListStart
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+            \vspace{-12pt}
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+            \vspace{-12pt}
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+        \resumeItemListEnd
+    \vspace{-3pt}
+    \expItem
+        {STAR Scholars}{Philadelphia, PA}{Cybersecurity Research Intern}{July 20XX - September 20XX}
+        \resumeItemListStart
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+            \vspace{-12pt}
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+            \vspace{-12pt}
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+        \resumeItemListEnd
+    \vspace{-10pt}
+    \expItem
+        {Kyrion Technologies, Microsoft Training Association}{India}{Cybersecurity Intern}{June 20XX - July 20XX}
+        \resumeItemListStart
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+            \vspace{-12pt}
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}\vspace{-10pt}
+            \resumeItem{}
+            {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+        \resumeItemListEnd
+        
+%-------SKILLS------------------ 
+\vspace{-10pt}
+\section{Skills}
+\vspace{-10pt}
+\begin{table}[h!]
+\begin{tabular}{r|l}
+Security \, \, & \, Nmap, JohnTheRipper, Wireshark, Burpsuite, Aircrack-ng, Crunch \\
+Programming     \, \,     &  \, Python, Go, C++, Bash, JavaScript, PHP, SQL \\
+Operating Systems   \, \,    &  \, Linux (Ubuntu, Kali, Arch), Windows Server \& Workstation, MacOS \\
+Tools \& Technologies  \, \, & \, Git, Docker, Windows Powershell, Vim, Protege, FortiManager,  \LaTeX 
+\end{tabular}
+\end{table}\vspace{-17pt}
+
+%-----------PROJECTS-----------------
+\section{Selected Projects}
+\resumeItemListStart
+    \resumeItem{Lorem ipsum -}
+        {dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+    \resumeItem{Lorem ipsum -}
+        {dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+    
+    \vspace{-10pt}
+\resumeItemListEnd
+
+%-------CERTIFICATIONS-----------------
+\vspace{-3pt}
+\section{Certifications}
+\resumeItemListStart
+    \resumeItem{}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}
+        \vspace{-10pt}
+    \resumeItem{}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.}\vspace{-10pt}
+\resumeItemListEnd
+
+% ---------INVOLVEMENTS -----------------
+\section{Involvements \& Achievements}
+\resumeItemListStart
+    \resumeItem{}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. }
+        \vspace{-12.5pt}
+    \resumeItem{}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. }
+    \vspace{-12.5pt}
+    \resumeItem{}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. }
+        \vspace{-12.5pt}
+    \resumeItem{}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. }
+        \vspace{-12.5pt}
+    \resumeItem{}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. }
+        \vspace{-12.5pt}
+    \resumeItem{}
+        {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. }
+
+\resumeItemListEnd
+
+\end{document}
